@@ -1,0 +1,188 @@
+body{
+	background-color: #a04561 ;
+	margin: 7em;
+	text-align: center;
+	user-select: none;
+}
+
+progress{
+	width: 120px;
+	position: absolute;
+	background-color: black;
+	height: 10px;
+	margin-top: -20px;
+	margin-left: -60px;
+}
+
+.charakter{
+	width: 150px;
+	height: 150px;
+	border-radius: 1em;
+	transition: 0.5s;
+
+}
+.playerGladiator{
+	background-color:#a0af74 ;
+	position: absolute;
+	margin-right: 40%;
+	}
+
+.enemyGladiator{
+	background-color:#e5a99e ;
+	position: absolute;
+	left: 324px;
+}
+
+.enemyLives{
+	margin : 60px;
+	margin-top: 30px;
+}
+.motion{
+	width: 40px;
+	height: 40px;
+	background-color: #486faf;
+	cursor: pointer;
+}
+
+.forward{
+	border-radius:  0 1em 0 5em;
+	float: right;
+}
+
+.playerLives{
+	position: absolute;
+	margin: 60px;
+	margin-top: 30px;
+}
+
+.reverse{
+	border-radius:  1em 0 5em 0;
+	float: left;
+}
+
+.attack{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+.weakAttack{
+	background-color: #75a870;
+	position: absolute;
+	float: left;
+	margin-top: 110px;
+	border-radius:  0 1em 0 1em;
+}
+
+.mediumAttack{
+	background-color: #d8ba31;
+	position: absolute;
+	float: left;
+	margin-top: 110px;
+	margin-left: 50px;
+	border-radius:   1em 1em 0 0 ;
+	width: 50px;
+	height: 40px;
+}
+
+.strongAttack{
+	position: absolute;
+	background-color: #a87070;
+	float: left;
+	margin-top: 110px;
+	margin-left: 110px;
+	border-radius:  1em 0 1em 0;
+}
+
+.info{
+	position:  absolute;
+	margin: 10em 25%;
+	font-size: 1.5em;
+	color: #f32;
+}
+
+.wkAttck{
+	font-size: .8em;
+	background-color: green;
+	display: none;
+	opacity: .7;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	width: 110px;
+	border: 1px dotted black;
+	border-radius: 5px;
+}
+
+.mdmAttck{
+	font-size: .8em;
+	display: none;
+	background-color: yellow;
+	opacity: .7;
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+	width: 110px;
+	border: 1px dotted black;
+	border-radius: 5px;
+}
+
+.strngAttck{
+	font-size: .8em;
+	display: none;
+	background-color: red;
+	opacity: .7;
+	position: absolute;
+	bottom: 50px;
+	right: 0px;
+	width: 110px;
+	border: 1px dotted black;
+	border-radius: 5px;
+}
+
+.enemyMiss{
+	animation: enemyMiss 0.5s;
+}
+
+@keyframes enemyMiss{
+	0%{ margin-left: -10px; }
+	100%{ margin-left: 0; }
+}
+
+.playerMiss{
+	animation: playerMiss 0.5s;
+}
+
+@keyframes playerMiss{
+	0%{ margin-left: 10px; }
+	100%{ margin-left: 0; }
+}
+
+.playerAttack{
+	animation: playerAttack 0.5s;
+}
+
+@keyframes playerAttack{
+	0%{ margin-left: 10px; }
+	100%{ margin-left: 0; }
+}
+
+.enemyAttack{
+	animation: enemyAttack 0.5s;
+}
+
+@keyframes enemyAttack{
+	0%{ margin-left: -10px; }
+	100%{ margin-left: 0; }
+}
+
+.hit{
+	animation: attack 0.5s;
+}
+
+@keyframes attack{
+	0%{ transform: scaleY(0.9); }
+	100%{	transform: scaleY(1);}
+}
